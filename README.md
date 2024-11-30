@@ -11,6 +11,8 @@ Frontend Setup
 cd frontend
 npm i
 ```
+### Flowchart ###
+TODO
 ## DEMO ##
 ### HomePage ###
 ![HomePage](https://github.com/user-attachments/assets/9f217e58-2d98-4c63-a8b3-7e8c6be2fd0d)
