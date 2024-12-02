@@ -1,7 +1,8 @@
 # FOODAPP
 The source code and materials are all from https://youtu.be/ardeKHEN1j4?si=Et81mpafFo-pt6VT
 ### Installation ###
-We support Node.js. To install the dependencies run:
+We support Node.js. To install the dependencies run:</br>
+
 Backend Setup
 ```
 cd backend
@@ -26,3 +27,7 @@ We use Auth0 for authentication.
 
 ### Login Successful ###
 ![login](https://github.com/user-attachments/assets/f7d9a565-bd60-4956-b6da-a025405a8a9e)
+
+### User Profile ###
+![UserProfile](https://github.com/user-attachments/assets/4bfeeba7-c8aa-4cb1-8aa3-066ab2b15a61)
+
