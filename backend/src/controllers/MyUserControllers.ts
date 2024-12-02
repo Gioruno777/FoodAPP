@@ -24,6 +24,20 @@ const CreateCurrentUser = async (req: Request, res: Response) => {
     }
 }
 
+const GetCurrentUser = async (req: Request, res: Response) => {
+    try {
+        const currentUser = await UserInfo.findById(req.userId)
+        if (!currentUser) {
+            res.status(404).json({ message: "User not found" })
+            return
+        }
+        res.json(currentUser)
+    } catch (error) {
+        res.status(404).json({ message: "User not found" })
+        return
+    }
+}
+
 const UpdateCurrentUser = async (req: Request, res: Response) => {
     try {
         const { name, address, city, country } = req.body
@@ -51,5 +65,6 @@ const UpdateCurrentUser = async (req: Request, res: Response) => {
 
 export default {
     CreateCurrentUser,
+    GetCurrentUser,
     UpdateCurrentUser
 }

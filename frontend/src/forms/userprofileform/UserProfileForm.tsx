@@ -8,9 +8,13 @@ import {
     FormMessage
 } from "@/components/ui/form"
 import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import LoadingButton from "@/components/LoadingButton";
+import { User } from "@/types";
+import { useEffect } from "react";
 
 const formSchema = z.object({
     email: z.string().optional(),
@@ -22,22 +26,37 @@ const formSchema = z.object({
 export type UserFormData = z.infer<typeof formSchema>
 
 type Props = {
+    currentUser: User
+    onSave: (userProfileData: UserFormData) => void
+    isLoading: boolean
     title?: string
     buttonText?: string
 
 }
 
 const UserProfileForm = ({
+    currentUser,
+    onSave,
+    isLoading,
     title = "User Profile",
     buttonText = "Sumbit"
 }: Props) => {
-    const form = useForm<UserFormData>({
 
+    const form = useForm<UserFormData>({
+        resolver: zodResolver(formSchema),
+        defaultValues: currentUser
     })
+
+    useEffect(() => {
+        form.reset(currentUser)
+    }, [currentUser, form])
+
+
     return (
         <Form {...form}>
             <form
                 className="space-y-4 bg-gray-50 rounded-lg md:p-10"
+                onSubmit={form.handleSubmit(onSave)}
             >
                 <div>
                     <h2 className="text-2xl font-bold">{title}</h2>
@@ -80,6 +99,7 @@ const UserProfileForm = ({
                                 <FormControl>
                                     <Input {...field} className="bg-white" />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -92,6 +112,7 @@ const UserProfileForm = ({
                                 <FormControl>
                                     <Input {...field} className="bg-white" />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -105,13 +126,18 @@ const UserProfileForm = ({
                                 <FormControl>
                                     <Input {...field} className="bg-white" />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
                 </div>
-                <Button type="submit" className="bg-orange-500">
-                    {buttonText}
-                </Button>
+                {isLoading ? (
+                    <LoadingButton />
+                ) : (
+                    <Button type="submit" className="bg-orange-500">
+                        {buttonText}
+                    </Button>
+                )}
             </form>
         </Form>
     )

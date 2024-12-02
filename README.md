@@ -1,15 +1,18 @@
 # FOODAPP
 The source code and materials are all from https://youtu.be/ardeKHEN1j4?si=Et81mpafFo-pt6VT
 ### Installation ###
+We support Node.js. To install the dependencies run:
 Backend Setup
 ```
 cd backend
 npm i
+npm run dev
 ```
 Frontend Setup
 ```
 cd frontend
 npm i
+npm run dev
 ```
 ### Flowchart ###
 TODO
