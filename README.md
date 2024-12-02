@@ -29,5 +29,6 @@ We use Auth0 for authentication.
 ![login](https://github.com/user-attachments/assets/f7d9a565-bd60-4956-b6da-a025405a8a9e)
 
 ### User Profile ###
-![UserProfile](https://github.com/user-attachments/assets/4bfeeba7-c8aa-4cb1-8aa3-066ab2b15a61)
+![UserProfile](https://github.com/user-attachments/assets/daf9730d-8e91-4f2d-86b9-73f4aac53b7d)
+
 
