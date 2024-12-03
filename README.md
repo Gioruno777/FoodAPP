@@ -19,14 +19,15 @@ TODO
 ## DEMO ##
 ### HomePage ###
 ![HomePage](https://github.com/user-attachments/assets/03f9b9e4-0533-4dbf-aba5-0b06de452bd6)
-This is the homepage. At the top of the page, you can see the logo and the login button.Scrolling down, you'll find the search bar and at the very bottom of the page, you can see the privacy policy and terms of service.
-### Login Page ###
+This is the homepage. At the top of the page, you can see the logo and the login button. Scrolling down, you'll find the search bar and at the very bottom of the page, you can see the privacy policy and terms of service.
+### Login ###
 <img src="https://github.com/user-attachments/assets/17288236-1991-48f6-a1c0-2639cf984418" alt="auth0" width="30%" />
 <br/>
-We use Auth0 for authentication.
+We use Auth0 for authentication, allowing users to log in either by registering an account or using Gmail.
 
 ### Login Successful ###
-![login](https://github.com/user-attachments/assets/f7d9a565-bd60-4956-b6da-a025405a8a9e)
+![HomePageLogin](https://github.com/user-attachments/assets/91420088-8f90-4ce1-bcd9-09b1be434ef9)
+After successfully logging in, the login button changes to a user menu. The menu displays the logged-in user's email and includes options to update their profile, manage the restaurant, and log out. Additionally, it features a button on the left side that displays order status.
 
 ### User Profile ###
 ![UserProfile](https://github.com/user-attachments/assets/daf9730d-8e91-4f2d-86b9-73f4aac53b7d)
