@@ -1,8 +1,7 @@
 # FOODAPP
 The source code and materials are all from https://youtu.be/ardeKHEN1j4?si=Et81mpafFo-pt6VT
 ### Installation ###
-We support Node.js. To install the dependencies run:</br>
-
+We support ```Node.js```. To install the dependencies run:</br>
 Backend Setup
 ```
 cd backend
@@ -19,7 +18,8 @@ npm run dev
 TODO
 ## DEMO ##
 ### HomePage ###
-![HomePage](https://github.com/user-attachments/assets/9f217e58-2d98-4c63-a8b3-7e8c6be2fd0d)
+![HomePage](https://github.com/user-attachments/assets/03f9b9e4-0533-4dbf-aba5-0b06de452bd6)
+This is the homepage. At the top of the page, you can see the logo and the login button.Scrolling down, you'll find the search bar and at the very bottom of the page, you can see the privacy policy and terms of service.
 ### Login Page ###
 <img src="https://github.com/user-attachments/assets/17288236-1991-48f6-a1c0-2639cf984418" alt="auth0" width="30%" />
 <br/>
