@@ -27,7 +27,7 @@ We use <a href="https://auth0.com/">auth0<a/> for authentication, allowing users
 
 ### Login Successful ###
 ![HomePageLogin](https://github.com/user-attachments/assets/91420088-8f90-4ce1-bcd9-09b1be434ef9)
-After successfully logging in, the login button changes to a user menu. The menu displays the logged-in user's email and includes options to update their profile, manage the restaurant, and log out. Additionally, it features a button on the left side that displays order status.
+After successfully logging in, the login button changes to a user menu. The menu displays the logged-in user's email and includes options to manage the restaurant, update their profile, and log out. Additionally, it features a button on the left side that displays order status.
 
 ### User Profile ###
 ![UserProfile](https://github.com/user-attachments/assets/431624ce-2cb1-443c-a63b-da7e59013892)
